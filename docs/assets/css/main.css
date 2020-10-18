@@ -3429,7 +3429,6 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3458,22 +3457,13 @@ input, select, textarea {
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			text-transform: uppercase;
 		}
 
 		@media screen and (max-width: 2560px) {			/*1280 */
 
 			#banner {
-				padding: 2em 0 2em 0 ;
-/*
-				background-color: #2e3141;
-*/
+				padding: 1em 0 2em 0 ;
 				background-image: url("../../images/welder.jpg");
-/*				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-*/
-/*				background-size: auto,
- cover;
-*/
 				background-position: center,
  center;
 				margin-bottom: -6.5em;
@@ -3577,7 +3567,7 @@ input, select, textarea {
 			line-height: 2;
 			text-transform: uppercase;
 		}
-
+/*   			----------- Generic---------------                     */
 	@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
