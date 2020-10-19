@@ -3999,6 +3999,17 @@ input, select, textarea {
 			}
 
 		}
+/* Gist */
+
+.gist {
+	max-width:700px;
+	overflow:auto;
+ }
+ 
+ .gist .blob-wrapper.data {
+	max-height:700px;
+	overflow:auto;
+ }
 
 /* Footer */
 

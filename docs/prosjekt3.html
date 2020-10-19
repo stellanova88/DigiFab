@@ -44,9 +44,6 @@
 						<header>
 							<div class="inner">
 								<h2>Arduino - Fuktighetsmåling</h2>
-
-
-								</p>
 							</div>
 						</header>
 
@@ -58,7 +55,7 @@
 									<ul>
 										<li><a>Arduino UNO</a></li>
 										<li><a>OLED Display Module SSD1306 128x64 LCD</a></li>
-										<li><a>Analog Capacitive Soil Moisture Sensor V1.2 (Corrosion resistant</a></li>
+										<li><a>Analog Capacitive Soil Moisture Sensor V1.2 (Corrosion resistant)</a></li>
 										<li><a>Breadboard</a></li>
 										<li><a>Dupont MM wire</a></li>
 										<li><a>Neglelakk (ikke strømledende)</a></li>
@@ -69,39 +66,40 @@
 									</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/krets.jpg" alt="" /></a>
+											<h3 class="major">Testing</h3>
+											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>											
+											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
+												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte ikke er strømledende. 
+											</p>
+										</article>
+										<article>
+											<h3 class="major">Smileys</h3>
+											<a href="#" class="image"><img src="images/smil.png" alt="" /></a>											
+											<p>De 4 forskjellige smilefjesene som vises alt etter hvor fuktig jorda er. X vises prosentverdien av fuktigheten, hvor 0 er fuktigheten i normal luft, 
+												mens 100% er når måleren er senket ned i vann. 
+											</p>
+										</article>
+										<article>
 											<h3 class="major">Kretsen</h3>
+											<a href="#" class="image"><img src="images/krets.jpg" alt="" /></a>											
 											<p>OLED displayet får 5V og GND fra Arduino UNO, videre er SCl koblet til A5, mens SDA er koblet til A4.<br>
 												Fuktighetssensoren får 3.3V og GND fra Arduino'en og AUOT er koblet til A0 (Analog input).<br>
 												AREF har jeg koblet mot 3.3V, men jeg trur ikke det trengs.
 											</p>
-
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>
 											<h3 class="major">Kode</h3>
-											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
-												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
+											<script href="#" class="gist" src="https://gist.github.com/stellanova88/1d50e3fbd3aea288b44ab29edf925b78.js"></script>
+											<p>Arduino koden. Overgangs verdiene blir finjustert etter hvert.
 											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/smil.png" alt="" /></a>
-											<h3 class="major">Smileys</h3>
-											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
-												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
-											</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>
-											<h3 class="major">Testing</h3>
-											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
-												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
-											</p>
-										</article>
+										</article>	
 									</section>
 
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h3 class="major">Videre plan</h3>
+									<p> Plan er å senere overføre prosjektet til en ESP32 og koble den til en vannpumpe, når jeg får deler til det. Slik prosjektet er nå, får jeg testet fuktighetssensoren 
+										til jeg velget å utvide prosjektet.
+
+									</p>
 
 								</div>
 							</div>
@@ -121,6 +119,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+			
 
 	</body>
 </html>
