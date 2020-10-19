@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Solid State by HTML5 UP</title>
+		<title>Arduino - Fuktighetsmåling</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -43,8 +43,10 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Generic</h2>
-								<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+								<h2>Arduino - Fuktighetsmåling</h2>
+
+
+								</p>
 							</div>
 						</header>
 
@@ -52,21 +54,49 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Lorem ipsum dolor</h3>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
+									<h3 class="major">Til dette prosjektet trenger du:</h3>						
+									<ul>
+										<li><a>Arduino UNO</a></li>
+										<li><a>OLED Display Module SSD1306 128x64 LCD</a></li>
+										<li><a>Analog Capacitive Soil Moisture Sensor V1.2 (Corrosion resistant</a></li>
+										<li><a>Breadboard</a></li>
+										<li><a>Dupont MM wire</a></li>
+										<li><a>Neglelakk (ikke strømledende)</a></li>
+										<li><a>En plante</a></li>
+									</ul>
+									<p>Jeg kjøpte feil OLED display, da de 7 øverste pikslene på displayet har gul farge mens resten er blå. 
+									"It's not a bug, it's a feature", så det ble til en kaps på smiley'en min
+									</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/krets.jpg" alt="" /></a>
+											<h3 class="major">Kretsen</h3>
+											<p>OLED displayet får 5V og GND fra Arduino UNO, videre er SCl koblet til A5, mens SDA er koblet til A4.<br>
+												Fuktighetssensoren får 3.3V og GND fra Arduino'en og AUOT er koblet til A0 (Analog input).<br>
+												AREF har jeg koblet mot 3.3V, men jeg trur ikke det trengs.
+											</p>
+
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>
+											<h3 class="major">Kode</h3>
+											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
+												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
+											</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/smil.png" alt="" /></a>
+											<h3 class="major">Smileys</h3>
+											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
+												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
+											</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/arduino_kopp.jpg" alt="" /></a>
+											<h3 class="major">Testing</h3>
+											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
+												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte er ikke strømledende. 
+											</p>
 										</article>
 									</section>
 
