@@ -5,7 +5,6 @@
 #define OLED_RESET 4
 Adafruit_SSD1306 display(OLED_RESET);
 
-
 const int AirValue = 657;   //Høyeste verdi i luft
 const int WaterValue = 310;  //Laveste verdi i vann (Nesten hele sensoren må ned i vann)
 int moisture = 0;

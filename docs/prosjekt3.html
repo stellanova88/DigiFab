@@ -43,7 +43,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Arduino - Fuktighetsmåling</h2>
+								<h2>Arduino - Fuktighetsmåling </h2>
 							</div>
 						</header>
 
@@ -66,20 +66,6 @@
 									</p>
 									<section class="features">
 										<article>
-											<h3 class="major">Testing</h3>
-											<a href="#" class="image"><img src="images/koppv2.png" alt="" /></a>											
-											<p>Det er enklest å teste koden ved å ta fuktighetssensoren i en kopp med vann. For å beskytte kretsen på sensoren, 
-												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte ikke er strømledende. 
-											</p>
-										</article>
-										<article>
-											<h3 class="major">Smileys</h3>
-											<a href="#" class="image"><img src="images/smil.png" alt="" /></a>											
-											<p>De 4 forskjellige smilefjesene som vises alt etter hvor fuktig jorda er. X vises prosentverdien av fuktigheten, hvor 0 er fuktigheten i normal luft, 
-												mens 100% er når måleren er senket ned i vann. 
-											</p>
-										</article>
-										<article>
 											<h3 class="major">Kretsen</h3>
 											<a href="#" class="image"><img src="images/kretsV2.jpg" alt="" /></a>											
 											<p>OLED displayet får 5V og GND fra Arduino UNO, videre er SCl koblet til A5, mens SDA er koblet til A4.<br>
@@ -87,6 +73,22 @@
 												AREF har jeg koblet mot 3.3V, men jeg trur ikke det trengs.
 											</p>
 										</article>
+										<article>
+											<h3 class="major">Testing</h3>
+											<a href="#" class="image"><img src="images/koppv2.png" alt="" /></a>											
+											<p>Når kretsen er ferdig bygget må man måle verdiene i vann (WaterValue), og luftverdien (AirValue). De verdien brukes så til bunn og toppverdi for å regne prosent. 
+												Verdiene målte jeg ved å bruke en annen arduino kode.<br> For å beskytte kretsen på sensoren, 
+												har jeg påført et par lag med neglelakk. Det fungerer siden de komponentene ikke blir varm, og siden neglelakken jeg brukte ikke er strømledende.
+											</p>
+										</article>
+										<article>
+											<h3 class="major">Smileys</h3>
+											<a href="#" class="image"><img src="images/smil.png" alt="" /></a>											
+											<p>De 4 forskjellige smilefjesene som vises etter hvor fuktig jorda er. X vises prosentverdien av fuktigheten, hvor 0 er fuktigheten i normal luft, 
+												mens 100% er når måleren er senket ned i vann. Prosentverdien viser jeg også for å kunne forbedre finjusteringene.
+											</p>
+										</article>
+
 										<article>
 											<h3 class="major">Kode</h3>
 											<script href="#" class="gist" src="https://gist.github.com/stellanova88/1d50e3fbd3aea288b44ab29edf925b78.js"></script>
