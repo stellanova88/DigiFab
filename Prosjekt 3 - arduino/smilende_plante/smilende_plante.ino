@@ -79,7 +79,7 @@ if(moisture <=20 || moisture >= 75)     //Hvis planten har lite eller for mye va
   display.clearDisplay();
 }
 //---------------------------------------Sur :( --------------------------------------------
-else if(moisture <=35 || moisture >= 65)     //Hvis planten har lite eller for mye vann
+else if(moisture <=35 || moisture >= 70)     //Hvis planten har lite eller for mye vann
 {
 //Skriver prosent oppe i høyre hjørne:
   display.setCursor(0,0);
@@ -146,7 +146,7 @@ else if(moisture > 35 && moisture < 45)
 } 
 
 //------------------------------------ Glad :) ----------------------------------------------
-else if(moisture >=45 && moisture < 65)  //Sensoren er fuktig
+else if(moisture >=45 && moisture < 70)  //Sensoren er fuktig
 {
   display.setCursor(0,0);
   display.setTextSize(1);

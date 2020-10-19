@@ -3027,6 +3027,7 @@ input, select, textarea {
 
 				.features article .image img {
 					border-radius: 5px 5px 0 0;
+					/* Forandre noe hær?  margin?*/
 					width: 100%;
 				}
 
