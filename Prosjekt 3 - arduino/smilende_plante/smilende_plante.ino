@@ -5,18 +5,10 @@
 #define OLED_RESET 4
 Adafruit_SSD1306 display(OLED_RESET);
 
- 
+
 const int AirValue = 657;   //Høyeste verdi i luft
 const int WaterValue = 310;  //Laveste verdi i vann (Nesten hele sensoren må ned i vann)
 int moisture = 0;
-
-//Nivåer på silefjesene
-//const int deadL = 0;      //Laveste nivå på tilstand    (x)(x)
-//const int mad = 10;      //Sur   :(
-//const int neutral = 20;   //middels :|
-//const int happy = 30;     //Glad  :)
-//const int deadH = 100;   //Høyeste verdi på tilstand    (x)(x)
-
 
 void setup() {
   Serial.begin(9600); // open serial port, set the baud rate to 9600 bps
