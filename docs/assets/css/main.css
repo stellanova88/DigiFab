@@ -3001,6 +3001,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin: 0 0 2em 0;
+	
 	}
 
 		.features article {
@@ -3009,6 +3010,7 @@ input, select, textarea {
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
+			
 		}
 
 			.features article:nth-child(2n) {
@@ -4000,6 +4002,9 @@ input, select, textarea {
 			}
 
 		}
+
+
+
 /* Gist */
 
 .gist {
