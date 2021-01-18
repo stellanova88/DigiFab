@@ -59,19 +59,55 @@
 
 									<section class="features">
 										<article>
-											<h3 class="major"></h3>
-											<a href="#" class="image"><img src="#" alt="" /></a>											
-											<p></p>
+											<h3 class="major">Rpi e-ink værvarsel</h3>
+											<img class="image" src="images/e-ink.jpg" alt="E-ink display koblet til en raspberry pi 3b" />											
+											<p>Jeg har skrevet et python program som med yr sin api henter værmeldinga i json format for Remmen. 
+												Raspberry pi'en er koblet til et display fra waveshare som så viser værmeldinga. Værmeldinga og displayet oppdateres hvert 10 minutt.</p>
 										</article>
 										<article>
-											<h3 class="major"></h3>
-											<a href="#" class="image"><img src="#" alt="" /></a>											
-											<p></p>
+											<h3 class="major">Koblingsskjema</h3>
+											<img class="image" src="images/koblingsskjema.JPG" alt="koblingsskjema" />											
+											<p>Displayet er koblet til raspberry pi etter dette koblingsskjema. Jeg har til vane å bruke orange ledning på 3.3V og rød ledning for 5V</p>
+											<p>Dokumentasjon for GPIO (<cite>General Purpose Input/Output</cite>) 
+												kan man sjekke på <a href="https://www.raspberrypi.org/documentation/usage/gpio/">raspberry pi sin offisielle side</a></p>
 										</article>
 										<article>
-											<h3 class="major"></h3>
-											<a href="#" class="image"><img src="#" alt="" /></a>											
-											<p></p>
+											<h3 class="major">Waveshare</h3>
+											<a href="https://github.com/jarret/raspi-uart-waveshare" class="image"><img src="images/test-cycle-py.png" alt="" /></a>																	
+											<p>For å skrive tekst på e-ink displayet, brukte jeg <a href="https://github.com/jarret/raspi-uart-waveshare">dette programmet fra jarret.</a> Filene la jeg inn på raspberry pi'en.</p>
+										</article>
+										
+										<article>
+											<h3 class="major">Koden</h3>
+											<p>yr_data.py som ligger i mappa yrApi henter daten fra yr.no i json format, og lager variabler av den informasjonen jeg vil ha.
+												Slik det er nå kan displayet ikke bruke æøå. Dermed Blir vindrettningen gitt på engelsk. Det er mulig jeg senere implementerer æøå eller viser vindrettningen som piler.
+											</p>
+											<p>For å endre sted for værmeldinga, sett inn egen høyde- og breddegrad inn på lat lon og alt.  
+												Jeg har fjernet min egen user-agent, så finn din egen og sett inn i <kode>"user-agent": "Put your user-agent here"</kode>.
+											</p>
+											<p>Main filen er 2021_yr.py. Det er denne som bestemmer hva displayet skal vise.</p>
+										</article>
+										<article>
+											<h3 class="major">Oppdateringsfrekvens</h3>
+											<img class="image" src="images/crontab -e.JPG" alt="Crontab kode" />											
+											<p>Jeg bruker crontab for å kjøre programmet hvert 10 minutt. Skriv <cite>crontab -e</cite> i terminalel. 
+											På en ny linje setter du så inn tidsplanen og lokasjonen og navnet til programmet som skal kjøre. Trykk så Ctrl x, og y for å lagre.
+										 	<a href="https://www.raspberrypi.org/documentation/linux/usage/cron.md"> Dokumentasjon om crontab finner du hær.</a></p>
+										</article>
+										<article>
+											<h3 class="major">Videre plan</h3>						
+											<p>Dette var et prosjekt jeg gjorde for å få bedre forståelse på API og e-ink display i bruk med rpi.
+												Det har jeg også fått, men det er en rekke ting jeg tenker kan forbedres etterhvert på dette prosjektet.</p>
+											<ol>
+												<li>Legge til æ, ø og å.</li>
+												<li>Gjør all tekst som vises på displayet til norsk.</li>
+												<li>Lage ikoner som viser været.</li>
+												<li>Formatere oppdateringstiden.</li>
+												<li>Lage piler for vindrettningen.</li>
+												<li>Pynte utskriften med litt linjer.</li>
+												<li>Oppsumert tekst av været framover.</li>
+
+											</ol>
 										</article>
 
 										
