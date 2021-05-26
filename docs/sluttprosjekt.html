@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Macro keyboard | Sluttprosjekt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Forside</a></h1>
+						<nav>
+							<a href="#menu">Meny</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Forside</a></li>
+								<li><a href="prosjekt2.html">Design | MediaPlayer Box</a></li>
+								<li><a href="prosjekt3.html">Arduino | Fuktighetsmåling</a></li>
+								<li><a href="prosjekt4.html">Raspberry Pi | E-ink værvarsel</a></li>
+								<li><a href="prosjekt5.html">3D printing | vesa adapter hp27er</a></li>
+								<li><a href="Sluttprosjekt.html">Sluttprosjekt | Macro Keyboard</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Macro Keyboard</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">Utstyr:</h3>						
+									<ul>
+										<li><a href="https://www.raspberrypi.org/products/raspberry-pi-pico/" target="_blank" rel="nofollow noopener">Raspberry Pi Pico</a></li>
+										<li><a href="https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display?view=all" target="_blank" rel="nofollow noopener">IPS Display fra Adafruit</a></li>
+										
+										<li><a href="https://www.digikey.no/product-detail/no/cherry-americas-llc/MX1A-11NN/CH162-ND/91136" target="_blank" rel="nofollow noopener">7x Knapper av typen MX1A-11NN</a></li>
+										<li><a href="https://www.digikey.no/products/no?keywords=PEC11R-4015F-S0024" target="_blank" rel="nofollow noopener">4X Rotary Encoder av typen PEC11R-4015F-S0024</a></li>
+										<li><a href="https://www.digikey.no/product-detail/no/essentra-components/RBS-27/RPC4827-ND/3814612" target="_blank" rel="nofollow noopener">4x Gummi føtter</a></li>
+										<li><a href="" target="_blank" rel="nofollow noopener">6x Skruer</a></li>
+										<li><a href="" target="_blank" rel="nofollow noopener">6x Threaded inserts</a>
+											<ul>
+												<li><a>2x M2x4x3,3mm</a> </li>
+												<li><a>2x M3x8x5mm</a> </li>
+												<li><a>2x M2x10x5mm</a> </li>
+											</ul>
+										</li>
+										
+									</ul>
+
+									<section class="features">
+										<article>
+											<h3 class="major">Macro Keyboard</h3>
+											<img class="image" src="../Sluttprosjekt/images/MacroKeyboard.jpg" alt="Macro Keyboard" />											
+											<p>Jeg har laget et makro keyboard med 7 knapper, 4 rotary encoders og en skjerm.
+											Den styres av en Raspberry Pi Pico som sender signaler til datamaskinen slik som et tastatur. 
+											</p>
+											<p>Rotary encoderne jeg har valgt roterer uendelig og uten motstand. De har jeg planlagt skal styre volumet til spotify, discord, chrome og hovedlyden. Når de trykkes inn muter/unmuter den spesifikke lyden.
+											</p>
+											<p>De 7 knappene skal være hurtigtaster for å mute mic, bytte til headsett, bytte skjerm, osv ... </p>
+											<p>Macro keyboardet er designet til å ha samme høyde og samme vinkel som tastaturet mitt.</p>
+										</article>
+										<article>
+											<h3 class="major">Design</h3>
+											<img class="image" src="../Sluttprosjekt/images/Fusion360Design.jpg" alt="Fusion 360 design" />											
+											<p>Jeg valgte å dele disignet opp i 3 deler fordi jeg ville ha lave keykaps som ikke sto høyt over selve boksen.
+											Dermed er knappene og rotary encoderne festet i den midterste delen.</p>
+											<img class="image" src="../Sluttprosjekt/images/inserts.jpg" alt="Threaded inserts" />
+											<p>Jeg ønsket ingen synlige skruer på toppen eller på sidene, så laget hull for threaded insert på undersiden av den øverste delen.
+											Jeg brukte M2x10x5 threaded insert som jeg så smeltet ned i hullene ved hjelp av et loddebolt. Hullene har diameter på 5mm og er 1 mm dypere for å gi plass for smeltet plast.</p>
+											<p>Rundt knappene er avstanden hevet for å litt mellomrom mellom lagene, og for å avstive delen. 
+											I etterkant så ville jeg heller ha økt tykkelsen til den øverste delen.</p>
+											<p>Midtdelen og bunnen er også koblet sammen med threaded inserts (2x M3x8x5mm). 
+											Prøvde først med en mutter på samme måte som Prusa printerne er bygget, men jeg designet åpningen litt trangt i tillegg til at pilaren er printet på nesten 90 grader.
+											Derfor valgte jeg også å bruke threaded inserts hær.</p>
+											<img class="image" src="../Sluttprosjekt/images/MutterFail.jpg" alt="Failet mutter kobling" />
+											<p>
+											De andre avstand/støttepilarene som er i bunnen burde heller være i midtdelen, slik at det blir lettere å plassere kablene når disse to delene kobles sammen.</p>
+											<p>I tilfelle Pico'en blir varm, så designet bunnen slik at det kommer litt luft under Pico'en. Hullen i bunnen er laget for å gjøre det lettere å dra delene fra hverandre.</p>
+										</article>
+										<article>
+											<h3 class="major">Testing på breadboard</h3>
+											<img class="image" src="../Sluttprosjekt/images/breadboard.jpg" alt="Alt koblet til breadboard for testing" />																	
+											<p>Alt ble koblet sammen på et breadboard for testing mot Picoen. Cherry knappene passet ikke på breadboardet, så jeg brukte noen andre knapper jeg hadde liggende. Hadde bare 6 av de, så den ene knappen er koblet utenfor bildet.
+											</p>
+											<img class="image" src="../Sluttprosjekt/images/koblingskjema.jpg" alt="Koblingskjema" />
+											<p><a href="https://www.raspberrypi-spy.co.uk/2021/01/pi-pico-pinout-and-power-pins/#prettyPhoto" target="_blank" rel="nofollow noopener">Pico pins:</a></p>
+											<img class="image" src="../Sluttprosjekt/images/pico.jpg" alt="Pins på en Rpi Pico" />
+											<p>Vurderte tidligere i planleggingen å bruke Pro Micro eller Qwiic Pro Micro. Da måtte jeg har koblet knappene i en resistor ladder, eller en button matrix. 
+											Siden Pico'en har flere GPIO, så valgte jeg å la hver knapp få sin egen GPIO.</p>
+										</article>
+										
+										<article>
+											<h3 class="major">Koden</h3>
+											<p>Pico kan kodes med MicroPyton eller circuitPython, så jeg valgte MicroPython. Prøvde først å kode i VS, 
+											men fant ut at <a href="https://thonny.org/" target="_blank" rel="nofollow noopener">Thonny</a> har en windows version, som fungerte mye letter.											</p>
+											<p>Til å bruke rotary encoder så har jeg tatt i bruk biblioteket til <a href="https://github.com/MikeTeachman/micropython-rotary"  target="_blank" rel="nofollow noopener" >miketeachman på github. </a>
+											Jeg er ikke ferdig med kodedelen av prosjektet. Foreløpig så har jeg bare enkel kode for å teste at alt fungere.</p>
+											<script href="#" class="gist"  src="https://gist.github.com/stellanova88/c0af1ff86dbae6c9a14338d40be37d01.js"> </script>
+											<p>Over er koden fra encoder_og_knapper.py for å teste knappene og rotary encoder.</p>
+
+											<p>Testkode for skjermen: 
+											</p>
+											<script href="#" class="gist"  src="https://gist.github.com/stellanova88/e220bc2be90459b4b71a7b3b5b8e84fb.js"></script>
+											<p>Dette er koden jeg har nå bare for å teste skjermen main.py.
+											 Koden er hentet fra 
+											<a href="https://penfold.owt.com/st7789py/" target="_blank" rel="nofollow noopener">denne siden.</a></p>
+										</article>
+										
+										
+
+										
+									</section>
+
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		
+			
+
+	</body>
+</html>
